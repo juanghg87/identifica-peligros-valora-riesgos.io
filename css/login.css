@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 23px;
+    word-spacing: 1.6px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+header{
+    width: 100%;
+    height: 500px;
+    background-size: 100%;
+    background: #f12711; 
+    background: -webkit-linear-gradient(to right, hsla(41, 92%, 53%, 0.644), hsla(6, 89%, 51%, 0.575)), url(/images/img1-2.jpg); 
+    background: linear-gradient(to right, hsla(41, 92%, 53%, 0.644), #f1291393), url(../images/img1.jpg); 
+    background-size: cover;
+    background-position: bottom ;
+    background-attachment: fixed;
+    position: relative;
+}
+
+@media screen and (min-width: 900px) {
+    .toggle-menu > img{
+        display: none;
+    }
+}
+.wavey{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.index-menu-bar{
+    position: absolute;
+    padding: .7em 2em;
+}
+#menu-bar{
+    display: none;
+}
+.img-home{
+    height: 40px;
+}
+.menu-bar-btn{
+    margin-right: 10px;
+    margin-left: auto;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: .6em;
+    padding: .5em .5em;
+    margin-right: 1em;
+}
+li a.home-page, li a:hover{
+    background: -webkit-linear-gradient(to right, hsla(41, 92%, 53%, 0.644), hsla(6, 89%, 51%, 0.575)); 
+    background: linear-gradient(to right, hsla(41, 92%, 53%, 0.644), #f1291393);
+    border-radius: 10px; 
+    transition: .5s;
+}
+
+.img-menu-bar{
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    display: none;
+}
+.container-login{
+    display: flex; /*para usar estilos de flexbox*/
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+.login{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    border-right: solid 2px #fff;
+    border-left: solid 2px #fff;
+    border-radius: 20px;
+}
+.bg-login{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+}
+.bg-login img{
+    margin-top: -55px;
+    margin-bottom: 20px;
+    width: 20%;
+}
+.bg-login h3{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.bg-login form{
+    width: 60%;
+}
+form{
+    text-align: center;
+}
+.bg-login form input{
+    box-shadow: 0;
+    border: 0;
+    background-color: rgba(255,255,255,0.1);
+    width: 90%;
+    margin-bottom: 25px;
+    height: 30px;
+    border: solid 2px rgba(255,255,255,0.15);
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    transition: all 250ms ease;
+}
+.bg-login form input:focus{
+    outline: 0px;
+    background-color:rgba(255,255,255,0.6) ;
+    border: solid 2px rgba(255,255,255,0.01);
+    color: #000000;
+}
+.boton{
+    width: 100%;
+    height: 30%;
+    font-size: 22px;
+    margin-top: 5px;
+    border: 0;
+    text-align: center;
+    background-color: rgba(255,0,0,0.0);
+    border-bottom: solid 1px #fff;
+    color: #fff;
+    margin-top: 30px;
+    transition: all 220ms ease;
+}
+.boton:hover{
+    width: 120%;
+    margin-left: -10%;
+}
+.boton:active{
+    background-color: rgba(255,255,255,0.1);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+.boton:focus{
+    background-color:rgba(255,255,255,0.1) ;
+    outline: 0;
+    border:0;
+    border-radius: 5px;
+}
+.forgot-pass{
+    text-decoration: none;
+    font-size: 10px;
+    transition: all 200ms ease;
+    color: #fff;
+    margin-top: 8px;
+}
+.forgot-pass:hover{
+    font-size: 15px;
+}
+#footer-btn{
+    display: none;
+}
+.footer-container{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    text-decoration: none;
+}
+.footer-container a >img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+.footer-container label >img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.footer-media a{
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    background-color: rgba(0,0,0,0.3);
+}
+.footer-media a, .footer-btn img{
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow:  12px 5px 18px 2px rgba(0,0,0,0.97);
+    transition: all .5s ease;
+}
+.footer-media a:hover{
+    background: white;
+}
+.footer-media a{
+    opacity: 0;
+    visibility: hidden;
+    
+}
+#footer-btn:checked ~ .footer-media a{
+    margin-bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+.final{
+    text-align: center;
+    font-size: 10px;
+    margin: 10px 0 0 0;
+    color: #1a2a6c;
+}
+input::placeholder {
+    color: white;
+}
+@media screen and (max-width:900px) {
+    .img-menu-bar{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        z-index: 1;
+        display: block;
+        text-align: center;
+        position: fixed;
+        background-color: rgba(0,0,0,0.92);
+        border: solid 2px rgba(255,255,255,0.15);
+        border-right: solid 2px #fff;
+        border-left: solid 2px #fff;
+        border-radius: 20px;
+        width: 100%;
+        height: 70%;
+        top: 80px;
+        left: 100%;
+        transition: 1s;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        line-height: 40px;
+    }
+    nav ul li a{
+        font-size: .8em;
+        padding: 10px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: white;
+    }
+    #menu-bar:checked ~ ul{
+        left: 0%;
+    }
+    /* #menu-bar:checked ~ main{
+        display: none;
+    } */
+    li a.home-page{
+        background: none;
+    }
+    .container-login{
+        width: 100%;
+    }
+    .login{
+        width: 100%;
+    }
+}
